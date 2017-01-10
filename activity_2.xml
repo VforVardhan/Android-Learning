@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deadpool"
+    tools:context="shreevardhan.slidenerd.Activity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITY2"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:id="@+id/buttonLaunchMap"
+        android:background="#6bffb300"
+        android:onClick="ImplicitIntentFunctionality"
+        android:layout_alignTop="@+id/buttonEmail"
+        android:layout_toRightOf="@+id/buttonGoogle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:id="@+id/buttonGoogle"
+        android:background="#6c00fff7"
+        android:onClick="ImplicitIntentFunctionality"
+        android:layout_alignTop="@id/buttonLaunchMap"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMainActivity"
+        android:text="Go to MainActivity"
+        android:background="#6c5f5ffc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/buttonEmail"
+        android:background="#6affea00"
+        android:onClick="ImplicitIntentFunctionality"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonMainActivity"
+        android:layout_toStartOf="@+id/buttonSendImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send image"
+        android:id="@+id/buttonSendImage"
+        android:background="#69c568e4"
+        android:onClick="ImplicitIntentFunctionality"
+        android:layout_alignTop="@id/buttonEmail"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to go to Email Activity"
+        android:id="@+id/buttonEmailActivity"
+        android:background="#6af75959"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to go to CustomToastActivity"
+        android:id="@+id/buttonCustomToastActivity"
+        android:background="#6a8c5ef7"
+        android:layout_below="@id/buttonEmailActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FbLoginUI"
+        android:id="@+id/buttonFb"
+        android:background="#932255cc"
+        android:layout_below="@+id/buttonCustomToastActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+
+
+</RelativeLayout>
