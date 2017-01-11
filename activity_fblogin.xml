@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25c"
+    tools:context="shreevardhan.slidenerd.FbLogin">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="facebook"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:id="@+id/facebookTextView"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#fff"
+        android:id="@+id/emailTextView"
+        android:layout_below="@id/facebookTextView"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailEditText"
+        android:inputType="textEmailAddress"
+        android:background="#fff"
+        android:layout_below="@id/emailTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="#fff"
+        android:id="@+id/passwordTextView"
+        android:layout_below="@id/emailEditText"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEditText"
+        android:background="#fff"
+        android:layout_below="@id/passwordTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need an account? \n Sign Up using your phone"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/signUp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Login"
+        android:checked="true"
+        android:id="@+id/checkBox"
+        android:layout_below="@id/passwordEditText"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_marginTop="32dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Login"
+        android:background="#fff"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
